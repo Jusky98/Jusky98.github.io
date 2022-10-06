@@ -1,0 +1,158 @@
+
+/* REGLA GENERAL PARA CREAR ESTILOS CSS (buena practica tener esto)
+1. Posicionamiento --> static, absolute, relative, fixed
+2. Modelo de caja (Box model) --> margin, border, padding, content
+3. Tipografía --> tipos, tamaños de fuente, etc
+4. Estilos visuales --> box-shadow, border-radius, gradient, etc
+5.  Otros --> reglas CSS y más
+*/
+
+:root {
+    --aquamarine: #41c7a4;
+    --white: #fefcff;
+    --normalfontsz: 2rem;
+    --titlefont:3rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-rows: 50px 120px;
+
+}
+
+.header-container{
+    width: 100%;
+    background-color: var(--aquamarine);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.header-container__icons img {
+    width: 35px;
+    height: 35px;
+    margin: 0 10px 0 10px;
+    
+}
+
+.header-container__icons img:hover {
+    transform: scale(1.1);
+}
+
+/* nav */
+
+.nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fefcff;
+}
+
+.nav__logo-container {
+    margin: 5px;
+    transition: all .2s ease-in-out;
+}
+
+.nav__logo-container:hover {
+    transform: scale(1.1);
+}
+
+.nav__logo-container img {
+    align-self: center; 
+    width: 220px;
+    height: 70px;
+}
+
+.nav__aboutme {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: var(--normalfontsz);
+    transition: all .2s ease-in-out;
+}
+
+.nav__aboutme:hover {
+    transform: scale(1.1);
+}
+
+.nav__aboutme a {
+    text-decoration: underline;
+    font-weight: 600;
+    
+}
+
+/* Main */
+
+.home {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 100vh;
+    background-image: url("./assets/img/Cover.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home__text {
+    justify-self: center;
+    align-self: flex-end;
+    padding: 0 20px 0 20px;
+    min-width: 250px;  
+    max-width: 500px;
+    text-align: center; 
+    font-size: 1.8rem;
+    color: #fefcff;
+    line-height: 35px;
+
+}
+
+.home__button {
+    justify-self: center;
+    width: 120px;
+    height: 50px;
+    padding-top: 10px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: var(--normalfontsz);
+    font-weight: 700;
+    background-color: #41c7a4;
+    border-radius: 8px;
+    transition: all .2s ease-in-out;
+}
+
+.home__button:hover {
+    transform: scale(1.1);
+}
+
+
+

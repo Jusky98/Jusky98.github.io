@@ -1,0 +1,23 @@
+.header-container {
+    justify-content: flex-end;
+}
+
+.header-container__icons {
+    margin-right: 30px;
+}
+
+.header-container__icons img {
+    margin-right: 30px;
+}
+
+.nav    {
+    justify-content: space-between;
+}
+
+.nav__logo-container {
+    margin-left: 100px;
+}
+
+.nav__aboutme {
+    margin-right: 100px;
+}
