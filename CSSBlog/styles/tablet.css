@@ -2,3 +2,25 @@
     flex-direction: row;
     justify-content: space-around;
 }
+
+.blogs-nav {
+        flex-direction: row;
+    justify-content: space-around;
+}
+
+.blog-hero-container__coverimg img {
+    width: 400px;
+    transition: all .4s ease-in-out;
+    box-shadow: 0px 10px 20px ;
+}
+
+.blog-hero-container__description {
+    grid-row: 3 / 4;
+    max-width: 500px;
+    height: 220px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 40px;
+    font-size: 1.8rem;
+    
+}
